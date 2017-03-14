@@ -3,7 +3,7 @@
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 $mobile-indent 28px;
+    padding: 0 $mobile-indent 18px;
     box-sizing: border-box;
     flex-wrap: wrap;
     @media all and (min-width: 450px){
@@ -12,6 +12,11 @@
     @media all and (min-width: 1600px){
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .theme-btn {
+	color: #a3a3a6 !important;
+	border: 2px solid #a3a3a6 !important;
     }
 
     &:after {
@@ -70,8 +75,12 @@
         .btn-neutral,
         .btn {
             font: 14px/18px muliregular;
-            color: #515e66;
+            color: #a3a3a6;
             text-transform: uppercase;
+
+		&:hover {
+			color: #fff !important;
+		}
         }
     }
     .nav-courseware {
@@ -81,8 +90,8 @@
         color: #fff;
 
         &:hover {
-            color: #993300;
-            text-decoration: none;
+	    //color: #993300;
+            text-decoration: underline;
         }
     }
 }

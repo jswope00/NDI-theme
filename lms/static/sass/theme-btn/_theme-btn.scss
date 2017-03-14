@@ -2,8 +2,8 @@
 .theme-btn {
     @include inline-block;
     font: 14px/1.3 muliregular;
-    color: #fff !important;
-    border: 2px solid #fff;
+    color: #5a666e !important;
+    border: 2px solid #5a666e;
     padding: 7px 24px 6px;
     box-shadow: none;
     border-radius: 0;
@@ -12,21 +12,21 @@
     transition: all .1s;
 
     &:hover {
-        color: $theme-color-main !important;
-        background: #fff;
-        border-color: #fff;
+        color: #fff !important;
+        background: #d4772d;
+        border-color: #d4772d;
         text-decoration: none;
     }
 
     &__invert {
         color: #fff !important;
-        background: $theme-color-main;
-        border: 1px solid $theme-color-main;
+        background: none;
+        border: 2px solid #fff;
         
         &:hover {
-            color: $theme-color-main !important;
+            color: #d4772d !important;
             background: #fff;
-            border: 1px solid $theme-color-main-hover;
+            border: 2px solid #d4772d;
         }
     }
     &__right {
