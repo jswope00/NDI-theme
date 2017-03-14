@@ -33,8 +33,11 @@
       <section class="courses-container">
         % if course_discovery_enabled:
         <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
+        <!--Start comment out Viewing X Courses message..
           <div id="discovery-message" class="search-status-label"></div>
-          <form class="wrapper-search-input">
+        ..End Comment out Viewing x courses mesage-->
+          <div class="search-status-label">Course Catalog</div>  
+	<form class="wrapper-search-input">
             <label for="discovery-input" class="sr">${_('Search for a course')}</label>
             <input id="discovery-input" class="discovery-input" placeholder="${_('Search for a course')}" type="text"/>
             <button type="submit" class="button postfix discovery-submit" title="${_('Search')}">
@@ -63,7 +66,7 @@
           </ul>
         </div>
 
-
+<!--Comment out Refine Your Search aside..
         % if course_discovery_enabled:
         <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
           <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
@@ -71,6 +74,7 @@
           </section>
         </aside>
         % endif
+..End Commenting out aside -->
 
       </section>
     </section>

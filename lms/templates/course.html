@@ -23,6 +23,6 @@ from django.core.urlresolvers import reverse
                 <li>${_("Starts")}: <time itemprop="startDate" datetime="${course.start_datetime_text()}">${course.start_datetime_text()}</time></li>
             </ul>
         </div>
-        <a class="theme-btn" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">view more</a>
+        <a class="theme-btn" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">${_("View More")}</a>
     </div>
 </article>

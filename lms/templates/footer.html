@@ -12,37 +12,39 @@
 <footer class="theme-footer">
   <div class="theme-footer_holder">
     <div class="theme-footer_section">
-      <span class="theme-footer_text">If you have some questions please contact us</span>
-      <a class="theme-btn" href="/contact">Contact us</a>
+      <span class="theme-footer_text">${_("If you have some questions please contact us")}</span>
+      <a class="theme-btn" href="mailto:admin@redinnovacion.org">${_("Contact Us")}</a>
     </div>
   </div>
   <div class="theme-footer_holder theme-footer_holder__color">
     <div class="theme-footer_wrapper">
       <div class="theme-footer_col">
-        <h2 class="theme-footer_col-header">About the National Democratic Institute</h2>
+        <h2 class="theme-footer_col-header">${_("About Red Innovacion")}</h2>
         <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" target="_blank" href="https://www.ndi.org/">NDI Website</a>  
+          <a class="theme-footer_col-link" target="_blank" href="https://www.redinnovacion.org/">${_("Red Innovacion Website")}</a>  
         </div>
         <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" target="_blank" href="https://www.ndi.org/whoweare">About Us</a>
+          <a class="theme-footer_col-link" target="_blank" href="/about">${_("About Us")}</a>
         </div>
       </div>
       <div class="theme-footer_col">
-        <h2 class="theme-footer_col-header">courses</h2>
+        <!--Start Comment out Link to Studio..
+	<h2 class="theme-footer_col-header">courses</h2>
         <div class="theme-footer_col-holder">
           <a class="theme-footer_col-link" href="https://${settings.CMS_BASE}">Create Course Now</a>
         </div>
+	..End Comment out Link to Studio-->
       </div>
       <div class="theme-footer_col">
-        <h2 class="theme-footer_col-header">Contact us</h2>
+        <h2 class="theme-footer_col-header">${_("Contact Us")}</h2>
         <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" href="/contact">Contact Us</a>
+          <a class="theme-footer_col-link" href="mailto:admin@redinnovacion.org">${_("Contact Us")}</a>
         </div>
       </div>
     </div>
     <div class="theme-footer_section">
       <div class="theme-footer_copyright">
-        © 2016 National Democratic Institute. All Rights Reserved
+        © 2016 National Democratic Institute. ${_("All Rights Reserved")}
         <a target="_blank" href="${footer['openedx_link']['url']}">
           <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
         </a>

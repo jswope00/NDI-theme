@@ -1,0 +1,43 @@
+//This file isn't used as part of theme compilation. It is a record of custom translation strings. To enable strings, these lines must be copied to the bottom of /edx-platform/conf/locale/[language_code]/LC_MESSAGES/django.po
+//Then run paver i18n_fastgenerate. See here: https://github.com/edx/edx-platform/wiki/Internationalization-and-localization
+//Then restart Open EdX
+//Note, you will get errors if you try to translate the same string twice. Also, strings are case sensitive
+
+msgid "About RED"
+msgstr "Acerca de RED"
+
+msgid "Courses"
+msgstr "Cursos"
+
+msgid "Find us on:"
+msgstr "Encuéntranos en:"
+
+msgid "About Red Innovación"
+msgstr "Acerca de Red Innovación"
+
+msgid "Red Innovacion Website"
+msgstr "Red Innovacion Sitio Web"
+
+msgid "About Us"
+msgstr "Acerca de"
+
+msgid "All Rights Reserved"
+msgstr "Todos los Derechos Reservados"
+
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+msgid "Welcome to the {platform_name}!"
+msgstr "Bienvenido al Portal RED Innovación"
+
+msgid "Explore Courses"
+msgstr "Explorar cursos"
+
+msgid "Our Courses"
+msgstr "Nuestros Cursos"
+
+msgid "View More"
+msgstr "Ver más"
+
+msgid "If you have some questions please contact us"
+msgstr "Si tiene alguna pregunta, póngase en contacto con nosotros"
