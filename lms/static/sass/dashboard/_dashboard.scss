@@ -22,12 +22,17 @@
             border-bottom: 4px solid $theme-color-main;
         }
        .course-item {
-            border: 4px solid $theme-color-main;
+            border-bottom: 4px solid $theme-color-main;
         }
 
-       .course-container {
-            border: none;
-        } 
+        .listing-courses {
+            .course-item {
+                border-bottom: 4px solid $theme-color-main;
+                .course-container {
+                    border: none;
+                }
+            } 
+        }
     }
     .profile-sidebar {
         float: none;
