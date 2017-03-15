@@ -19,6 +19,14 @@
         }
         .wrapper-header-courses {
             padding: 0 10px;
+            border-bottom: 4px solid $theme-color-main;
+        }
+       .course-item {
+            border: 4px solid $theme-color-main;
+        }
+
+       .course-container {
+            border: none;
         } 
     }
     .profile-sidebar {
