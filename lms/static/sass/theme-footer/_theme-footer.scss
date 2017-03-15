@@ -2,7 +2,7 @@
     background: #fff;
 
     &_holder {
-        padding-top: 53px;
+        padding-top: 30px;
 
         &__color {
             background: $theme-color-main;
@@ -22,7 +22,7 @@
         align-items: center;
         max-width: 1140px;
         margin: 0 auto;
-        padding: 28px 15px;
+        padding: 15px 15px;
 
         .theme-footer_holder__color & {
             border-color: #2f343b;
@@ -40,7 +40,7 @@
         display: flex;
         justify-content: space-between;
         max-width: 1140px;
-        margin: 0 auto 20px;
+        margin: 0 auto 5px;
         padding: 0 15px;
         box-sizing: border-box;
         flex-wrap: wrap;
@@ -74,7 +74,7 @@
     }
     &_col {
         width: 100%;
-        margin: 0 0 25px;
+        margin: 0 0 15px;
         @media all and (min-width: 600px){
             width: auto;
         }
