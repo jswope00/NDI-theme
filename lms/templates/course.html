@@ -5,24 +5,46 @@ from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
 %>
 <%page args="course" expression_filter="h"/>
-<article class="theme-courses_course" id="${course.id}" role="region" aria-label="${course.display_name_with_default}">
-    <div class="theme-courses_img-holder">
-        <a class="theme-courses_img-link" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">
-            <img class="theme-courses_img" src="${course.course_image_url}" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
-        </a>
+
+<!--===========START THE NEW CODE =============-->
+
+<li class="course-item">
+<div class="course-container">
+<article class="course theme-courses">
+  <section class="details theme-courses_course" aria-labelledby="details-heading-${course.display_number_with_default}">
+      <h2 class="hd hd-2 sr" id="details-heading-${course.display_number_with_default}">${_('Course details')}</h2>
+    <div class="theme-courses_img-holder" aria-hidden="true">
+            <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="cover">
+              <img src="${course.course_image_url}" class="theme-courses_img" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+              <img src="${course.image_urls['small']}" class="theme-courses_img" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+            </a>
     </div>
-    <div class="theme-courses_content">
-        <span class="theme-courses_org">${course.display_org_with_default}</span>
+
+      <div class="theme-courses_content">
+        <span class="theme-courses_org">${course.display_org_with_default} - </span>
         <span class="theme-courses_code">${course.display_number_with_default}</span>
-        <h1 class="theme-courses_title">${course.display_name_with_default}</h1>
-        <div class="theme-courses_date" aria-hidden="true"><span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>${_("Starts")}: ${course.start_datetime_text()}</div>
-        <div class="sr">
-            <ul>
-                <li>${course.display_org_with_default}</li>
-                <li>${course.display_number_with_default}</li>
-                <li>${_("Starts")}: <time itemprop="startDate" datetime="${course.start_datetime_text()}">${course.start_datetime_text()}</time></li>
-            </ul>
+        <h3 class="theme-courses_title">
+              <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">${course.display_name_with_default}</a>
+        </h3>
+          <span class="theme-courses_date" data-tooltip="Hi">
+          <span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+            ${_("Starts")}: <time itemprop="startDate" datetime="${course.start_datetime_text()}">${course.start_datetime_text()}</time>
+          </span>
+        <div class="wrapper-course-actions">
+          <div class="course-actions">
+
+                  <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="theme-btn theme-btn__right">${_('Learn More')}<span class="sr">&nbsp;${course.display_name_with_default}</span></a>
+
+
+
+          </div>
         </div>
-        <a class="theme-btn" href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">${_("View More")}</a>
-    </div>
+      </div>
+
+
+</section>
 </article>
+</div>
+</li>
+
+ 
