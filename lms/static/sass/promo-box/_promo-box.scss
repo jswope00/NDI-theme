@@ -27,7 +27,7 @@
         display: none;
         @media all and (min-width: 860px){
             display: block;
-            font: 24px/1 muliregular;
+            font: 24px/1 'Open Sans';
             color: #fff;
             text-transform: uppercase;
         }
@@ -44,7 +44,7 @@
         }
     }
     &_link {
-        font: 16px/1.3 muliregular;
+        font: 16px/1.3 'Open Sans';
         display: inline-block;
         background: #74bb00;
         padding: 13px 14px 12px;
