@@ -29,7 +29,7 @@
     }
     &_code,
     &_org {
-        display: block;
+        display: inline-block;
         font-size: 20px;
         line-height: 26px;
         font: 20px/26px 'Work Sans', sans-serif;
@@ -62,7 +62,7 @@
         }
     }
     &_date {
-        font: 16px/20px muliregular;
+        font: 16px/20px 'Open Sans';
         color: #0a2d46;
         padding: 2px 0;
         margin: 0 0 26px;
@@ -78,7 +78,7 @@
     }
     &_link {
         display: inline-block;
-        font: 14px/1.3 muliregular;
+        font: 14px/1.3 'Open Sans';
         color: #85d600 !important;
         border: 1px solid #85d600;
         padding: 8px 14px 9px;
