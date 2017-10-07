@@ -7,15 +7,27 @@
             float: left;
         }
 
-        .course .details {
-            .wrapper-course-actions {
-                width: auto !important;
-            }
-            .course-actions .action {
-                height: 35px;
-                padding: 8px !important;
-                color: #5a666e !important;
-            }
+        .course {
+            .details {
+                .wrapper-course-actions {
+                        width: auto !important;
+                }
+                .course-actions .action {
+                        height: 35px;
+                        padding: 8px !important;
+                        color: #5a666e !important;
+                }
+           }
+           .wrapper-messages-primary .message {
+                background: #f1f1f1;
+                border: 1px solid #e4e4e4;
+                color: #3c3c3c;
+
+                .message-status .message-copy .grade-value {
+                   font-size: 1.2rem; 
+                   font-weight: bold;
+                } 
+           }
         }
         .wrapper-header-courses {
             padding: 0 10px;
