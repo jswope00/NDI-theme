@@ -28,7 +28,29 @@ from django.core.urlresolvers import reverse
         </h3>
           <span class="theme-courses_date" data-tooltip="Hi">
           <span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-            ${_("Starts")}: <time itemprop="startDate" datetime="${course.start_datetime_text()}">${course.start_datetime_text()}</time>
+      <%
+      if course.start is not None:
+          course_date_string = course.start.strftime('%Y-%m-%dT%H:%M:%S%z')
+      else:
+          course_date_string = ''
+      %>
+      % if course.advertised_start is not None:
+          <div class="course-date" aria-hidden="true">${_("Starts")}: ${course.advertised_start}</div>
+      % else:
+          <div class="course-date localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="${course_date_string}" data-string="${_("Starts: {date}")}"></div>
+      % endif
+           </span>
+    <div class="sr">
+      <ul>
+        <li>${course.display_org_with_default}</li>
+        <li>${course.display_number_with_default}</li>
+        % if course.advertised_start is not None:
+            <li>${_("Starts")}: <time itemprop="startDate">${course.advertised_start}</time></li>
+        % else:
+            <li>${_("Starts")}: <time class="localized_datetime" itemprop="startDate" data-format="shortDate" data-datetime="${course_date_string}"></time></li>
+        % endif
+      </ul>
+    </div>
           </span>
         <div class="wrapper-course-actions">
           <div class="course-actions">
