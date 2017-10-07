@@ -1,5 +1,5 @@
 .theme-main-nav {
-    background: #fff3c2;
+    background: $theme-color-main-nav;
     width: 100%;
     order: -1;
     position: relative;
@@ -33,7 +33,7 @@
         padding: 12px 30px 13px;
         text-align: center;
         display: block;
-        color: #003B67 !important;
+        color: $theme-color-main-nav-link !important;
         @media all and (min-width: 450px){
             text-align: left;
         }

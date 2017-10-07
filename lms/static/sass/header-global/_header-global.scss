@@ -6,7 +6,7 @@
 
         &:hover {
             background: none;
-            //color: #fff3c2;
+            //color: #993300;
 	    text-decoration: underline;
         }
     }
@@ -31,7 +31,7 @@
         }
     }
     .user {
-        .dropdown {
+        .user-dropdown {
             margin: 5px 0 0;
             background: transparent;
 	    color: #fff;
@@ -45,5 +45,23 @@
                 margin: 12px 15px 6px 10px;
             }
         }
+	label {
+	   font-style: normal;
+	}
+    }
+    .logo-header {
+	margin-bottom: 0px;
     }
 }
+
+.header-global.slim {
+	.course-header {
+		width: 50% !important;
+		color: #fff;
+	}
+	.logo img {
+	    height: auto !important;
+	}
+
+    }
+
