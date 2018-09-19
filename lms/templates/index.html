@@ -12,7 +12,7 @@ from openedx.core.djangolib.markup import HTML, Text
     <section class="home">
       <section class="promo-box">
         <div class="promo-box_wrapper">
-          <img class="promo-box_img" src="/static/NDI/images/promo-box/promo-img.jpg" alt="promo img">
+          <img class="promo-box_img" id="promo-img" src="" alt="promo img">
           <div class="promo-box_helper"></div>
           <div class="promo-box_holder">
             <!--<span class="promo-box_text">the best theme for education</span>-->
@@ -48,6 +48,17 @@ from openedx.core.djangolib.markup import HTML, Text
          }
       })
    </script>
+
+   <script type="text/javascript">
+      window.onload = choosePic;
+      var myPix = new Array("/static/Guatemala/images/promo-box/background1.jpg","/static/Guatemala/images/promo-box/background2.jpg","/static/Guatemala/images/promo-box/background3.jpg","/static/Guatemala/images/promo-box/background4.jpg");
+
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("promo-img").src = myPix[randomNum];
+      }
+   </script>
+
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:
