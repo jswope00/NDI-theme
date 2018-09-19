@@ -1,0 +1,11 @@
+// certificate - base + honor | from _components.scss
+.layout-accomplishment.certificate-honor .accomplishment-rendering {
+        // hide the fancy
+        .accomplishment-signatories .signatory-signature,
+        .accomplishment-type-symbol {
+            display: block !important;
+        }
+}
+.accomplishment-rendering .accomplishment-statement p {
+	text-align: center;
+}
