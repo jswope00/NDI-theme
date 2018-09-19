@@ -1,10 +1,12 @@
 .theme-aside {
     width: 100%;
-    border: 1px solid #dae4ee;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
-
+    background: #fff;
+    @media (min-width: 860px) {
+	margin-top: 40px;
+    }
     &_list {
         margin: 0;
         padding: 0;

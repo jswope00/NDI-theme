@@ -12,7 +12,7 @@ from openedx.core.djangolib.markup import HTML, Text
     <section class="home">
       <section class="promo-box">
         <div class="promo-box_wrapper">
-          <img class="promo-box_img" src="/static/marvel-blue-theme-eucalyptus/images/promo-box/promo-img.jpg" alt="promo img">
+          <img class="promo-box_img" src="/static/demtools/images/promo-box/hero-image.jpg" alt="women at whiteboard">
           <div class="promo-box_helper"></div>
           <div class="promo-box_holder">
             <!--<span class="promo-box_text">the best theme for education</span>-->
@@ -24,8 +24,9 @@ from openedx.core.djangolib.markup import HTML, Text
       </section>
 
       <section class="theme-courses_wrapper">
-        <h1 class="theme-courses_heading">${_("Upcoming Courses")}</h1>
+        <!--<h1 class="theme-courses_heading">${_("Upcoming Courses")}</h1>-->
           <section class="theme-courses">
+	    <h1 class="theme-courses_heading">${_("Upcoming Courses")}</h1>
             <%include file="${courses_list}" />
           </section>
       </section>

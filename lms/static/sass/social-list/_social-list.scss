@@ -21,15 +21,15 @@
 a.social-list_link:focus,
 a.social-list_link:visited,
 a.social-list_link {
-    color: #ccccce !important;
+    color: #fff !important;
     font-size: 16px;
     line-height: 1.3;
 
     &:hover {
-        color: darken(#ccccce, 20%) !important;
+        color: #e0486c !important;
     }
 }
-a.social-list_link.social-list_link__twitter:hover {
+/*a.social-list_link.social-list_link__twitter:hover {
     color: #4099FF !important;
 }
 a.social-list_link.social-list_link__facebook:hover {
@@ -37,4 +37,4 @@ a.social-list_link.social-list_link__facebook:hover {
 }
 a.social-list_link.social-list_link__linkedin:hover {
     color: #0077B5 !important;
-}
+}*/

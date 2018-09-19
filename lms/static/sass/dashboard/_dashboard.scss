@@ -2,32 +2,84 @@
     .my-courses {
         width: 100%;
         float: none;
+	margin: auto;
+	background: transparent;
         @media all and (min-width: 860px){
             width: 74.41059%;
-            float: left;
+            /*float: left;*/
         }
 
-        .course .details {
-            .wrapper-course-actions {
-                width: auto !important;
-            }
-            .course-actions .action {
-                height: 35px;
-                padding: 8px !important;
-                color: #5a666e !important;
-            }
+        .course {
+            .details {
+                .wrapper-course-actions {
+                        width: auto !important;
+                }
+                .course-actions .action {
+                        height: 35px;
+                        padding: 8px !important;
+                        color: #5a666e !important;
+                }
+           }
+           .wrapper-messages-primary .message {
+                background: #f1f1f1;
+                border: 1px solid #e4e4e4;
+                color: #3c3c3c;
+
+                .message-status .message-copy .grade-value {
+                   font-size: 1.2rem; 
+                   font-weight: bold;
+                } 
+           }
+	
+	    .course-actions .wrapper-action-more .action-more {
+		padding: 0 !important;
+		border: 2px solid #e0486c;
+		color: #e0486c !important;
+		font-size: 20px;
+		border-radius: 0;
+		&:hover, :focus {
+			background: #e0486c;
+			color: #fff !important;
+		}
+	    }
+	    .course-actions .wrapper-action-more .action-more[aria-expanded='true'] {
+		background: #e0486c;
+                color: #fff !important;
+	    }
+	    .course-actions .wrapper-action-more .actions-dropdown .actions-dropdown-list:before {
+		border-bottom-color: #e0486c;
+		border-width: 8px;
+		right: 4px;
+	    }
+	    .course-actions .wrapper-action-more .actions-dropdown .actions-dropdown-list:after {
+		right: 4px;
+	    }
+            .course-actions .wrapper-action-more .actions-dropdown .actions-dropdown-list {
+		border: 2px solid #e0486c;
+		padding: 0;
+		border-radius: 0;
+	    }
         }
         .wrapper-header-courses {
             padding: 0 10px;
-            border-bottom: 4px solid $theme-color-main;
+	    border: 0;
+	    margin-bottom: -10px;
+	    background: transparent;
+	    .header-courses {
+		padding: 20px;
+		text-align: center;
+		font-size: 36px;
+		text-transform: none;
+		margin-bottom: 0;
+	    }
         }
        .course-item {
-            border-bottom: 4px solid $theme-color-main;
+            background: #fff;
         }
 
         .listing-courses {
             .course-item {
-                border-bottom: 4px solid $theme-color-main;
+                border-bottom: none;
                 .course-container {
                     border: none;
                 }
@@ -59,5 +111,14 @@
             width: 23.23176%;
             padding: 20px 0;
         }
+    }
+    .empty-dashboard-message {
+	border: 0;
+	background: #fff;
+	padding: 20px 0;
+	a:hover, a:focus {
+		background: #e0486c;
+		color: #fff !important;
+	}
     }
 }

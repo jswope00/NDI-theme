@@ -36,4 +36,8 @@ $theme-img-path: "../images/social-list/";
 @import "theme-media/theme-media";
 @import "container/container";
 @import "account-settigs-section/account-settigs-section";
+@import "certificates/custom";
+@import "base/base";
+@import "shared/modal";
 @import "layout";
+@import 'theme-header/theme-standalone-header';

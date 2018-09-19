@@ -1,0 +1,81 @@
+// certificate - base + honor | from _components.scss
+.layout-accomplishment.certificate-honor {
+
+        // hide the fancy
+        .accomplishment-signatories .signatory-signature,
+        .accomplishment-type-symbol {
+            display: block !important;
+        }
+}
+
+.certificate {
+	.wrapper-view {
+		background: #def3fe;
+	}
+	h1, h2, h3, h4 {
+		font-family: 'Work Sans', sans-serif !important;
+	}
+	.wrapper-header {
+		background: #35a0c4;
+	}
+	.header-app .logo {
+		background: #fff;
+		padding: 5px;
+		border-radius: 5px;
+		&:hover {
+			background: rgba(255,255,255,0.75);
+		}
+	}
+	.wrapper-banner-user {
+		background: #e0486c;
+		box-shadow: none;
+	}
+	.banner-user .message-actions .btn-inverse {
+		box-shadow: none;
+		border-radius: 0;
+		text-shadow: none;
+		border: 2px solid #fff;
+		&:hover {
+			background-image: none;
+			background-color: #fff;
+			color: #e0486c;
+		}		
+		&:focus, &:active {
+			box-shadow: none;
+		}
+	}
+	.accomplishment-metadata, .wrapper-about .about {
+		background: #fff;
+		padding: 2.12766%;
+	}		
+	.wrapper-footer {
+		box-shadow: none;
+		border: none;
+		background: #35a0c4;
+		color: #fff;
+		margin-bottom: 0;
+		a {
+			color: #fff;
+			border: 0;
+			&:hover, &:focus, &:active {
+				border: 0;
+				padding: 0;
+			}
+		}
+		.copy-micro {
+			color: #fff;
+		}
+	}
+	.copy-meta a {
+		&:focus, &:hover {
+			box-shadow: none;
+			border: none;
+		}
+	}
+
+
+}
+.layout-accomplishment.certificate-honor .accomplishment-main {
+                background: #def3fe;
+}
+

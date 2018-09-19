@@ -1,9 +1,9 @@
 .empty-dashboard-message a,
 .theme-btn {
     @include inline-block;
-    font: 14px/1.3 muliregular;
-    color: #5a666e !important;
-    border: 2px solid #5a666e;
+    font: 14px/1.3 'Open Sans';
+    color: #e0486c !important;
+    border: 2px solid #e0486c;
     padding: 7px 24px 6px;
     box-shadow: none;
     border-radius: 0;
@@ -13,8 +13,8 @@
 
     &:hover {
         color: #fff !important;
-        background: #d4772d;
-        border-color: #d4772d;
+        background: #e0486c;
+        border-color: #e0486c;
         text-decoration: none;
     }
 
@@ -24,9 +24,9 @@
         border: 2px solid #fff;
         
         &:hover {
-            color: #d4772d !important;
+            color: #e15173 !important;
             background: #fff;
-            border: 2px solid #d4772d;
+            border: 2px solid #fff;
         }
     }
     &__right {

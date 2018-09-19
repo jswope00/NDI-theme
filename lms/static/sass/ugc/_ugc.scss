@@ -1,10 +1,10 @@
 .ugc {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 1.4;
     color: #36424a;
-
+    padding: 20px;
     * {
-        font-family: muliregular !important;
+        font-family: 'Open Sans' !important;
     }
     p {
         margin: 0 0 30px;
@@ -14,4 +14,22 @@
         margin: 0 0 40px;
         font-weight: bold;
     }
+    h2 {
+	padding-top: 0;
+    }
+    .theme-btn__invert {
+          border: 2px solid #e0486c;
+          background: #fff;
+          color: #e0486c !important;
+	  margin-top: 20px;
+          &:hover {
+                background: #e0486c;
+                color: #fff !important;
+          }
+    }
+    p:last-of-type {
+	margin-bottom: 0;
+    }
+
 }
+

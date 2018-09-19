@@ -18,18 +18,28 @@
 
     &_wrapper {
         width: 100%;
+	background: #fff;
+	margin: 40px 0;
+        position: relative;
         @media all and (min-width: 860px){
             width: 63%;
         }
     }
     &_aside {
         width: 100%;
-        order: -1;
-        margin: 0 0 30px;
+        order: 0;
+        margin: 0 0 40px;
         @media all and (min-width: 860px){
             order: 2;
-            width: 30%;
+            width: 34%;
             margin: 0;
         }
+    }
+    .wrap-instructor-info {
+	position: absolute;
+	top: -23px;
+	font-size: 12px;
+	font-style: italic;
+	right: 0;
     }
 }

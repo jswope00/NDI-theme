@@ -49,7 +49,7 @@ site_status_msg = get_site_status_msg(course_id)
 </%block>
 <div class="nav-holder" aria-label="${_('Global')}">
   <header id="global-navigation" class="theme-header header-global ${"slim" if course else ""}" >
-    <div class="theme-header-info">
+    <!--<div class="theme-header-info">
         <div class="theme-header-info_contact">
             <a class="theme-header-info_mail" href="mailto:contact@ndi.org">contact@ndi.org</a>
         </div>
@@ -63,12 +63,12 @@ site_status_msg = get_site_status_msg(course_id)
 <li class="social-list_item"><a class="social-list_link social-list_link__instagram" target="_blank" href="http://www.instagram.com/ndidemocracy"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-    </div>
+    </div>-->
     <div class="theme-nav-wrapper" aria-label="${_('Global')}">
       <a href="${marketing_link('ROOT')}">
         <%block name="navigation_logo">
             <span class="theme-nav-wrapper_logo-holder">
-              <img src="/static/marvel-blue-theme-eucalyptus/images/header-info/ndi-logo.png" alt="National Democratic Institute logo"/>
+              <img src="/static/demtools/images/header-info/logo-demtools.png" alt="DemTools logo"/>
             </span>
         </%block>
       </a>
@@ -207,7 +207,7 @@ site_status_msg = get_site_status_msg(course_id)
     <div class="theme-main-nav_logo">
       <a href="${marketing_link('ROOT')}">
         <span class="theme-nav-wrapper_logo-holder">
-            <img src="${static.url("marvel-blue-theme-eucalyptus/images/header-info/ndi-logo-sq.png")}" alt="National Democratic Institute logo" style="width: 40px; padding: 10%;"/>
+            <img src="${static.url("demtools/images/header-info/logo-demtools-sm.png")}" alt="DemTools logo" />
         </span>
       </a>
     </div>

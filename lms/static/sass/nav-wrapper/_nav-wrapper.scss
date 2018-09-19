@@ -3,7 +3,8 @@
     justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 $mobile-indent 18px;
+    /*padding: 0 $mobile-indent 18px;*/
+    padding: 5px;
     box-sizing: border-box;
     flex-wrap: wrap;
     @media all and (min-width: 450px){
@@ -15,8 +16,18 @@
     }
 
     .theme-btn {
-	color: #a3a3a6 !important;
-	border: 2px solid #a3a3a6 !important;
+	color: #ffffff !important;
+	border: 2px solid #ffffff !important;
+	padding: 5px 10px;
+	font-size: 12px;
+	&:hover {
+		background: #fff;
+		color: $theme-color-main !important;
+	}
+	@media (min-width: 860px) {
+		padding: 5px 15px;
+		font-size: 14px;
+	}
     }
 
     &:after {
@@ -24,17 +35,18 @@
     }
     &_holder {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;;
         align-items: center;
         flex-wrap: wrap;
         @media all and (min-width: 450px){
             flex-wrap: nowrap;
+	    justify-content: flex-end;
         }
     }
     &_logo-holder {
         display: none;
         overflow: hidden;
-        width: 54px;
+        width: 100%;
         @media all and (min-width: 860px){
             display: inline;
         }
@@ -43,19 +55,32 @@
             display: block;
         }
         img {
-            margin: -4px 0 0 -5px;
-            max-width: none;
+            margin: 0;
+            max-width: 100%;
             @media all and (min-width: 860px){
-                margin: 0;
+		background: #fff;
+		padding: 5px;
+		max-width: 60px;
+		border-radius: 5px;
+		margin-left: 10px;
             }
+	    &:hover {
+		background: rgba(255,255,255,0.75);
+	    }
         }
     }
     .nav-global {
         font: 0/0 a;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-
+	padding-left: 0;
+	margin-bottom: 5px;
+        @media (min-width: 450px) {
+		justify-content: flex-end;
+		padding-left: 40px;
+		margin-bottom: 0;
+	}
         .cta-discovery {
             @include inline-block;
             font-size: 26px;
@@ -74,17 +99,24 @@
         }
         .btn-neutral,
         .btn {
-            font: 14px/18px muliregular;
-            color: #a3a3a6;
+            font: 12px/1.2 'Open Sans';
+            color: #ffffff;
             text-transform: uppercase;
-
-		&:hover {
-			color: #fff !important;
-		}
+	    &:hover {
+		color: #fff !important;
+		text-decoration: underline;
+	    }
+	    @media (min-width: 860px) {
+		font-size: 14px;
+	    }
         }
     }
     .nav-courseware {
-        margin: 0;
+        margin: 0 10px 0 0;
+	padding-left: 0;
+	@media (min-width: 450px) {
+		padding-left: 40px;
+	}
     }
     .doc-link {
         color: #fff;

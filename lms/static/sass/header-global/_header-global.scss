@@ -11,7 +11,7 @@
         }
     }
     .nav-global {
-        margin-top: 7px;
+        margin-top: 0;
         width: 100%;
         @media all and (min-width: 450px){
             width: auto;
@@ -21,7 +21,7 @@
             color: #fff;
             line-height: 18px;
             padding-bottom: 5px;
-            font: 14px/1.3 muliregular;
+            font: 14px/1.3 'Open Sans';
             border-bottom: 4px solid transparent;
 
             &:hover,
@@ -31,7 +31,7 @@
         }
     }
     .user {
-        .dropdown {
+        .user-dropdown {
             margin: 5px 0 0;
             background: transparent;
 	    color: #fff;
@@ -45,5 +45,22 @@
                 margin: 12px 15px 6px 10px;
             }
         }
+	label {
+	   font-style: normal;
+	}
     }
-}
+    .logo-header {
+	margin-bottom: 0px;
+      }
+  }
+
+.header-global.slim {
+	.course-header {
+		width: 50% !important;
+		color: #fff;
+	}
+	.logo img {
+	    height: auto !important;
+	}
+
+    }
