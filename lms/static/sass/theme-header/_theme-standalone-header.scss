@@ -300,9 +300,9 @@ a.social-list_link:focus, a.social-list_link:visited, a.social-list_link {
 }
 
 .theme-header-info_mail {
-    font-size: 12px;
-    line-height: 15px;
-    color: #a3a3a6;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    color: #a3a3a6 !important;
     background: url(/static/NDI/images/header-info/mail.png) no-repeat 0 50%;
     padding-left: 18px;
     margin-left: 18px;
