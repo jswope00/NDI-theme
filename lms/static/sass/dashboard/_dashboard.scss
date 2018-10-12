@@ -1,75 +1,41 @@
 .dashboard {
-    .my-courses {
-        width: 100%;
-        float: none;
-        @media all and (min-width: 860px){
-            width: 74.41059%;
-            float: left;
-        }
-
-        .course {
-	    .details {
-            	.wrapper-course-actions {
-                	width: auto !important;
-            	}
-            	.course-actions .action {
-                	height: 35px;
-                	padding: 8px !important;
-                	color: #5a666e !important;
-            	}
-	   }
-	   .wrapper-messages-primary .message {
-    		background: #f1f1f1;
-    		border: 1px solid #e4e4e4;
-    		color: #3c3c3c;
-		
-		.message-status .message-copy .grade-value {
-		   font-size: 1.2rem; 
-		   font-weight: bold;
+    .main-container {
+        .my-courses {
+            width: 100%;
+            float: none;
+            .listing-courses {
+	        .course-item {
+		    .course-container {
+			border: none;
+		    }
 		}
-	   }
-        }
-        .wrapper-header-courses {
-            padding: 0 10px;
-            border-bottom: 4px solid $theme-color-main;
-        }
-       .course-item {
-            border-bottom: 4px solid $theme-color-main;
-        }
-
+	    }
+	}
+    }
+    .my-courses {
+	@media (min-width: 860px) {
+	    width: 75%;
+	}
         .listing-courses {
             .course-item {
-                border-bottom: 4px solid $theme-color-main;
+		list-style: none;
+		border-bottom: 4px solid $theme-color-main;
                 .course-container {
-                    border: none;
+                    list-style: none;
                 }
-            } 
+            }
         }
-    }
-    .profile-sidebar {
-        float: none;
-        width: auto;
-        margin-left: 0;
-        padding: 20px 10px;
-        @media all and (min-width: 860px){
-            float: right;
-            margin-left: 2.35765%;
-            width: 23.23176%;
-            margin-top: 40px;
-            padding: 20px 0;
-        }
-    }
-    .dashboard-search-bar {
-        margin-left: 0;
-        width: auto;
-        float: none;
-        padding: 0 10px;
-        @media all and (min-width: 860px){
-            margin-left: 2.35765%;
-            width: 23.23176%;
-            float: right;
-            width: 23.23176%;
-            padding: 20px 0;
-        }
+        .course {
+	    .details {
+                .wrapper-course-actions {
+                        width: auto !important;
+                }
+                .course-actions .action {
+                        height: 35px;
+                        padding: 8px !important;
+                        color: #5a666e !important;
+                }
+	    }
+	}
     }
 }

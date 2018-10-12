@@ -1,4 +1,10 @@
 .content-wrapper {
+    padding: 0px;
+    margin: 0px;
+    @media (min-width: 768px) {
+	padding: 0px;
+	margin: 0px;
+    }
 
     .login-form {
         * {

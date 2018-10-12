@@ -60,7 +60,6 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
         % endif
       >
 <article class="course${mode_class} theme-courses">
-  <% course_target = reverse(course_home_url_name(course_overview.id), args=[unicode(course_overview.id)]) %>
   <section class="details theme-courses_course" aria-labelledby="details-heading-${course_overview.number}">
       <h2 class="hd hd-2 sr" id="details-heading-${course_overview.number}">${_('Course details')}</h2>
     <div class="theme-courses_img-holder" aria-hidden="true">
@@ -136,7 +135,6 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
                     %>
                     <span class="info-date-block localized-datetime" data-language="${user_language}" data-tooltip="Hi" data-timezone="${user_timezone}" data-datetime="${course_date_string}" data-format=${format} data-string="${container_string}"></span>
                 % endif
-	</span>          
         <div class="wrapper-course-actions">
           <div class="course-actions">
             % if show_courseware_link:

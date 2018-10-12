@@ -80,11 +80,14 @@ from openedx.core.djangolib.markup import HTML, Text
                   <span class="tip tip-error is-hiding" id="tip-error-new-course-name"></span>
                 </li>
                 <li class="field text required" id="field-organization">
-                  <label for="new-course-org">${_("Organizations")}</label>
+                  <label for="new-course-org">${_("Organization")}</label>
                   ## Translators: This is an example for the name of the organization sponsoring a course, seen when filling out the form to create a new course. The organization name cannot contain spaces.
                   ## Translators: "e.g. UniversityX or OrganizationX" is a placeholder displayed when user put no data into this field.
-                  <input class="new-course-org" id="new-course-org" type="text" name="new-course-org" value="RED" aria-describedby="tip-new-course-org tip-error-new-course-org" readonly>
-                  <span class="tip" id="tip-new-course-org">${Text(_("The name of the organization sponsoring the course. {strong_start}Note: If you are creating this course from a microsite, then your course must take the organization code for your microsite.{strong_end} This cannot be changed, but you can set a different display name in Advanced Settings later.")).format(
+                  <select class="new-course-org" id="new-course-org" type="text" name="new-course-org" required placeholder="${_('e.g. NDI or RED')}" aria-describedby="tip-new-course-org tip-error-new-course-org" />
+			<option> ${_("NDI")} </option>
+			<option> ${_("RED")} </option>
+		  </select>
+                  <span class="tip" id="tip-new-course-org">${Text(_("The name of the organization sponsoring the course. {strong_start}Note: If you are creating this course from a microsite, you must take the organization code for that microsite.{strong_end} This cannot be changed, but you can set a different display name in Advanced Settings later.")).format(
                       strong_start=HTML('<strong>'),
                       strong_end=HTML('</strong>'),
                   )}</span>

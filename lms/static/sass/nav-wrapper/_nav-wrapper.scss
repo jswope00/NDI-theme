@@ -14,6 +14,11 @@
         padding-right: 0;
     }
 
+    .theme-btn {
+	color: #a3a3a6 !important;
+	border: 2px solid #a3a3a6 !important;
+    }
+
     &:after {
         display: none;
     }
@@ -70,7 +75,7 @@
         .btn-neutral,
         .btn {
             font: 14px/18px 'Open Sans';
-            color: #515e66;
+            color: #a3a3a6;
             text-transform: uppercase;
 
 		&:hover {
@@ -85,7 +90,7 @@
         color: #fff;
 
         &:hover {
-	    //color: #fff3c2;
+	    //color: #993300;
             text-decoration: underline;
         }
     }

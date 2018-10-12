@@ -1,0 +1,73 @@
+<%def name="online_help_token()"><% return "course" %></%def>
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.core.urlresolvers import reverse
+%>
+<%page args="course" expression_filter="h"/>
+
+<!--===========START THE NEW CODE =============-->
+
+<li class="course-item">
+<div class="course-container">
+<article class="course theme-courses">
+  <section class="details theme-courses_course" aria-labelledby="details-heading-${course.display_number_with_default}">
+      <h2 class="hd hd-2 sr" id="details-heading-${course.display_number_with_default}">${_('Course details')}</h2>
+    <div class="theme-courses_img-holder" aria-hidden="true">
+            <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="cover">
+              <img src="${course.course_image_url}" class="theme-courses_img" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+              <img src="${course.image_urls['small']}" class="theme-courses_img" alt="${course.display_name_with_default} ${course.display_number_with_default}" />
+            </a>
+    </div>
+
+      <div class="theme-courses_content">
+        <span class="theme-courses_org">${course.display_org_with_default} - </span>
+        <span class="theme-courses_code">${course.display_number_with_default}</span>
+        <h3 class="theme-courses_title">
+              <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">${course.display_name_with_default}</a>
+        </h3>
+          <span class="theme-courses_date" data-tooltip="Hi">
+          <span class="theme-courses_ico-holder"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+      <%
+      if course.start is not None:
+          course_date_string = course.start.strftime('%Y-%m-%dT%H:%M:%S%z')
+      else:
+          course_date_string = ''
+      %>
+      % if course.advertised_start is not None:
+          <div class="course-date" aria-hidden="true">${_("Starts")}: ${course.advertised_start}</div>
+      % else:
+          <div class="course-date localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="${course_date_string}" data-string="${_("Starts: {date}")}"></div>
+      % endif
+          </span>
+    <div class="sr">
+      <ul>
+        <li>${course.display_org_with_default}</li>
+        <li>${course.display_number_with_default}</li>
+        % if course.advertised_start is not None:
+            <li>${_("Starts")}: <time itemprop="startDate">${course.advertised_start}</time></li>
+        % else:
+            <li>${_("Starts")}: <time class="localized_datetime" itemprop="startDate" data-format="shortDate" data-datetime="${course_date_string}"></time></li>
+        % endif
+      </ul>
+    </div>
+        <div class="wrapper-course-actions">
+          <div class="course-actions">
+
+                  <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="theme-btn theme-btn__right">${_('Learn More')}<span class="sr">&nbsp;${course.display_name_with_default}</span></a>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+</section>
+</article>
+</div>
+</li>
+
+<%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+</%static:require_module_async> 
