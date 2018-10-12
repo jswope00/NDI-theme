@@ -8,7 +8,7 @@
             <ul class="listing-courses">
               ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
                 %for course in courses[:settings.HOMEPAGE_COURSE_MAX]:
-                <%include file="course.html" args="course=course" />
+                <%include file="course_v2.html" args="course=course" />
                 %endfor
             </ul>
           </div>
