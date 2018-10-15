@@ -11,7 +11,7 @@
 	padding-top: 30px
 }
 .theme-footer_holder__color {
-	background: #124C89
+	background: #036
 }
 .theme-footer_header {
 	font: 18px/1.3 'Open Sans';
@@ -113,11 +113,11 @@ a.social-list_link.social-list_link__linkedin:hover {
 }
 .custom-nav-holder .header-global {
 	width: 100%;
-	background-color: #124C89;
+	background-color: #036;
 	border: none;
 	height: auto;
 	padding: 5px 0 10px 0;
-	line-height: 1.4
+	line-height: 1.4    color: #065683;
 }
 .custom-nav-holder .header-global .dropdown-menu-container .dropdown-menu {
 	background: #fff;
@@ -368,9 +368,6 @@ a.social-list_link {
 	font-size: 16px;
 	line-height: 1.3
 }
-.theme-main-nav {
-	background: #d4772d
-}
 .theme-header {
 	text-align: left;
 	font-family: "Open Sans", Verdana, Geneva, sans-serif, sans-serif
@@ -413,7 +410,7 @@ a.social-list_link {
 	justify-content: center;
 }
 .theme-main-nav {
-	background: #d4772d;
+	background: #4c86c1;
 	width: 100%;
 	order: -1;
 	position: relative;
@@ -689,8 +686,8 @@ a.social-list_link {
 }
 .theme-btn:hover {
     	color: #fff !important;
-    	background: #d4772d;
-    	border-color: #d4772d;
+    	background: #4cc1bb;
+    	border-color: #4cc1bb;
     	text-decoration: none;
 }
 .theme-nav-wrapper_holder a.nav-link:hover{
