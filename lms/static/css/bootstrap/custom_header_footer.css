@@ -643,7 +643,8 @@ a.social-list_link {
 
 .theme-nav-wrapper_holder .nav-link{ 
 	padding: 0; 
-	color: #0075b4 !important; 
+	/* color: #0075b4 !important; */
+	color: #fff !important;
 	font-weight: bold; 	
 	font-size: 14px; 
 	margin-top: -6px;
@@ -694,7 +695,8 @@ a.social-list_link {
     	text-decoration: none;
 }
 .theme-nav-wrapper_holder a.nav-link:hover{
-	color: #065683 !important;
+	/* color: #065683 !important;*/
+	color: #fff !important;
 }
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: transparent;
