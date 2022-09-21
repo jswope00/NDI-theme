@@ -1,0 +1,342 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%namespace name='static' file='../static_content.html'/>
+<%
+course_mode_class = course_mode if course_mode else ''
+%>
+
+<main class="accomplishment accomplishment-main">
+
+    <div class="wrapper-accomplishment-rendering">
+
+<div class="accomplishment-rendering">
+
+   <div class="sign_sec">
+
+      <div class="wrapper-signatories">
+
+         <div class="list-signatories">
+                            % if certificate_data:
+                                % for signatory in certificate_data.get('signatories', []):
+                                <div class="signatory">
+                                    <img class="signatory-signature" src="" alt="">
+                                    <img class="signatory-signature" src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}">
+				    <h4 class="signatory-name hd-5">${signatory['name']}</h4>
+                                    <h4 class="signatory-name hd-5">${signatory['title']}</h4>
+                                    <p class="signatory-credentials copy copy-micro">
+                                        <span class="role">${signatory['organization']}</span>
+                                    </p>
+                                </div>
+                                % endfor
+                            % endif
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+   <div class="right_text">
+
+      <div class="accomplishment-type">
+
+         <span class="accomplishment-type-label-4">${document_title}</span>
+
+         <!--<span class="accomplishment-type-symbol">
+
+            <span>
+
+                              <img class="src" src="/static/certificates/images/ico-honor.png" alt="" style="width: 100%; max-width: 150px;">
+
+                          </span>-->
+
+      </div>
+      <div class="wrapper-statement-and-signatories">
+
+         <div class="accomplishment-statements">
+
+            <p class="accomplishment-statement-lead">
+
+               <strong class="accomplishment-recipient emphasized">${accomplishment_copy_name}</strong>
+
+               <span class="accomplishment-summary">${accomplishment_copy_description_full}</span>
+
+               <span class="accomplishment-course hd-1 emphasized">
+
+                  <!--                            <span class="accomplishment-course-org">edX  </span>
+
+                     <span class="accomplishment-course-number">Advanced</span>:
+
+                     -->
+
+                  <span class="accomplishment-course-name">${accomplishment_copy_course_name}</span>
+
+               </span>
+
+            </p>
+
+            <p class="accomplishment-statement-detail copy copy-lead">${accomplishment_copy_course_description}</p>
+
+         </div>
+
+         <div class="accomplishment-signatories">
+
+            <h3 class="accomplishment-signatories-title sr-only">Noted by</h3>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
+
+    </div>
+
+    <div class="wrapper-accomplishment-metadata">
+        <div class="accomplishment-metadata">
+            <h2 class="accomplishment-metadata-title hd-6">${accomplishment_copy_more_about}</h2>
+
+            <div class="wrapper-metadata">
+                <dl class="metadata accomplishment-recipient">
+                    <dt class="label sr-only">Awarded to:</dt>
+                    <dd class="value copy copy-meta">
+                        <span class="recipient-img">
+                            <img class="src" src="/static/certificates/images/demo-user-profile.png" alt="">
+                        </span>
+                        <div class="recipient-details">
+                            <h3 class="recipient-name">${accomplishment_copy_name}</h3>
+				<!--Kind of a bizarre bug(?) where I had to repplace ${platform_name} with hard-coded because it was taking the wrong platform name in this instance-->
+                            <p class="recipient-username">${accomplishment_copy_username} @ NDI Learning Portal</p>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="metadata accomplishment-id">
+                    <dt class="label copy copy-meta">${certificate_id_number_title}:</dt>
+                    <dd class="value copy copy-base">${certificate_id_number}</dd>
+                </dl>
+                <dl class="metadata accomplishment-date">
+                    <dt class="label copy copy-meta">${certificate_date_issued_title}</dt>
+                    <dd class="value copy copy-base">${certificate_date_issued}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<style>
+.layout-accomplishment.certificate-honor .accomplishment-rendering .accomplishment-signatories .signatory-signature, .layout-accomplishment.certificate-honor .accomplishment-rendering .accomplishment-type-symbol {
+    display: block;
+}
+.accomplishment-rendering {
+border-top: none;
+padding: 0px;
+display: table !important;
+border: 3px solid #111;
+box-shadow: 5px 5px;
+}
+
+
+
+.sign_sec {
+
+        background: #f4f4f4;
+
+        border: 20px solid #0e3a5d;
+
+        padding: 15px;
+
+        width: 25%;
+
+        display: table-cell;
+
+        vertical-align: middle;
+
+}
+
+.sign_sec .wrapper-signatories .signatory img {
+
+        width: 100%;
+
+        max-width: 135px;
+
+}
+
+
+
+.signatory h4,
+
+.signatory p {
+
+        text-align: center;
+
+        font-size: 16px;
+
+        font-weight: 600;
+
+        font-family: "Domine", serif;
+
+        margin-bottom: 0px;
+
+}
+
+
+
+.sign_sec .wrapper-signatories .signatory img:first-child {
+
+        margin-bottom: 15px;
+
+}
+
+
+
+.signatory {
+
+        margin-bottom: 25px;
+
+        text-align: center;
+
+}
+
+.right_text {
+
+        width: 70%;
+
+        text-align: left;
+
+        display: table-cell;
+
+        vertical-align: middle;
+
+        background: #ffffff;
+
+        padding: 70px 35px;
+
+}
+
+
+
+.accomplishment-rendering .accomplishment-statement,
+
+.accomplishment-rendering .accomplishment-signatories {
+
+        border: none;
+
+}
+
+
+
+.accomplishment-rendering .accomplishment-type {
+
+        text-align: left;
+
+}
+
+
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-summary,
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-statement-detail,
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-course,
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-recipient,
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-type {
+
+        text-align: left;
+
+        font-family: "Domine", serif;
+
+}
+
+.accomplishment-rendering .accomplishment-statement {
+
+    padding-bottom: 0px;
+
+}
+
+
+
+.right_text .accomplishment-type-label-4 {
+
+        font-size: 20px;
+
+        font-weight: 900;
+
+}
+
+
+
+.right_text .accomplishment-recipient.emphasized,
+
+.accomplishment-course.hd-1.emphasized {
+
+        font-size: 36px;
+
+        margin: 60px 0px;
+
+}
+
+.accomplishment-rendering .accomplishment-recipient {
+  text-transform: uppercase;
+}
+
+.right_text .accomplishment-summary {
+
+        font-size: 20px;
+
+}
+
+.layout-accomplishment .accomplishment-rendering .accomplishment-summary, .layout-accomplishment .accomplishment-rendering .accomplishment-statement-detail, .layout-accomplishment .accomplishment-rendering .accomplishment-course, .layout-accomplishment .accomplishment-rendering .accomplishment-recipient, .layout-accomplishment .accomplishment-rendering .accomplishment-type {
+font-family: 'Abhaya Libre', serif;
+}
+
+.right_text .accomplishment-type-label-4, .accomplishment-statement-detail.copy.copy-lead, .accomplishment-summary {
+font-size: 24px !important;
+}
+.accomplishment-statement-detail.copy.copy-lead, .accomplishment-summary {
+font-weight: 500 !important;
+}
+
+.right_text .accomplishment-recipient.emphasized, .accomplishment-course.hd-1.emphasized {
+font-size: 56px;
+font-family: 'Abhaya Libre', serif;
+margin: 60px 0px;
+font-weight: 900;
+}
+
+@media print {
+.right_text {
+display: block;
+margin-top: 40px;
+width: 100%;
+}
+.right_text .accomplishment-recipient.emphasized, .accomplishment-course.hd-1.emphasized {
+font-size: 36px;
+margin: 35px 0px;
+}
+.sign_sec .wrapper-signatories .signatory img {
+width: 60%;
+margin-bottom: 8px;
+}
+.signatory {
+margin-bottom: 20px;
+}
+.signatory h4, .signatory p {
+font-size: 14px;
+line-height: 1.1;
+}
+.sign_sec .wrapper-signatories .list-signatories .signatory:nth-child(1){
+margin-top:15px;
+}
+.layout-accomplishment .wrapper-accomplishment-rendering {
+margin-bottom: 0px;
+}
+.sign_sec .wrapper-signatories .list-signatories .signatory:nth-child(7) {
+display: none;
+}
+}
+
+</style>
