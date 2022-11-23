@@ -50,23 +50,10 @@ site_status_msg = get_site_status_msg(course_id)
 </%block>
 
 % if uses_bootstrap:
-<link rel="stylesheet" type="text/css" href="/static/NDI/css/bootstrap/custom_header_footer.css"/>
+<link rel="stylesheet" type="text/css" href="/static/TIBET/css/bootstrap/custom_header_footer.css"/>
 <div class="nav-holder custom-nav-holder" aria-label="${_('Global')}">
   <header id="global-navigation" class="theme-header header-global ${"slim" if course else ""}" >
     <div class="theme-header-info">
-        <div class="theme-header-info_contact">
-            <a class="theme-header-info_mail" href="mailto:nditech@ndi.org">nditech@ndi.org</a>
-        </div>
-        <div class="theme-header-info_social">
-            <span class="theme-header-info_text">${_("Find us on:")}</span>
-            <ul class="social-list">
-                <li class="social-list_item"><a class="social-list_link social-list_link__twitter" target="_blank" href="http://www.twitter.com/ndi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link social-list_link__facebook" target="_blank" href="https://www.facebook.com/National.Democratic.Institute"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link social-list_link__youtube" target="_blank" href="http://www.youtube.com/user/ndipublicaffairs"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-		<li class="social-list_item"><a class="social-list_link social-list_link__linkedin" target="_blank" href="http://www.linkedin.com/company/national-democratic-institute-ndi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-		<li class="social-list_item"><a class="social-list_link social-list_link__instagram" target="_blank" href="http://www.instagram.com/ndidemocracy"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
     </div>
     <div class="theme-nav-wrapper" aria-label="${_('Global')}">
         <%include file="navbar-logo-header.html" args="online_help_token=online_help_token"/>
@@ -111,19 +98,6 @@ site_status_msg = get_site_status_msg(course_id)
 <div class="nav-holder" aria-label="${_('Global')}">
   <header id="global-navigation" class="theme-header header-global ${"slim" if course else ""}" >
     <div class="theme-header-info">
-        <div class="theme-header-info_contact">
-            <a class="theme-header-info_mail" href="mailto:nditech@ndi.org">nditech@ndi.org</a>
-        </div>
-        <div class="theme-header-info_social">
-            <span class="theme-header-info_text">${_("Find us on:")}</span>
-            <ul class="social-list">
-                <li class="social-list_item"><a class="social-list_link social-list_link__twitter" target="_blank" href="http://www.twitter.com/ndi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link social-list_link__facebook" target="_blank" href="https://www.facebook.com/National.Democratic.Institute"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-list_item"><a class="social-list_link social-list_link__youtube" target="_blank" href="http://www.youtube.com/user/ndipublicaffairs"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-		<li class="social-list_item"><a class="social-list_link social-list_link__linkedin" target="_blank" href="http://www.linkedin.com/company/national-democratic-institute-ndi"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-		<li class="social-list_item"><a class="social-list_link social-list_link__instagram" target="_blank" href="http://www.instagram.com/ndidemocracy"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
     </div>
     <div class="theme-nav-wrapper" aria-label="${_('Global')}">
         <%include file="navbar-logo-header.html" args="online_help_token=online_help_token"/>
@@ -172,13 +146,12 @@ site_status_msg = get_site_status_msg(course_id)
     <div class="theme-main-nav_logo">
       <a href="${marketing_link('ROOT')}">
         <span class="theme-nav-wrapper_logo-holder">
-            <img src="${static.url("NDI/images/header-info/ndi-logo-sq.png")}" alt="National Democratic Institute logo" style="width: 40px; padding: 10%;"/>
+            <img src="${static.url("TIBET/images/header-info/tpie-logo-sq.png")}" alt="TPIE logo" style="width: 40px; padding: 10%;"/>
         </span>
       </a>
     </div>
     <nav class="theme-main-nav_holder">
         <ul class="theme-main-nav_list">
-            <li class="theme-main-nav_item"><a href="/about" class="theme-main-nav_link">${_("About NDI")}</a></li>
             <li class="theme-main-nav_item"><a href="/courses" class="theme-main-nav_link">${_("Courses")}</a></li>
             <!--<li class="theme-main-nav_item"><a href="/blog" class="theme-main-nav_link">Blog</a></li>-->
             <!--<li class="theme-main-nav_item"><a href="/contact" class="theme-main-nav_link">Contact Us</a></li>-->

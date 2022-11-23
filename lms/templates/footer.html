@@ -1,6 +1,7 @@
 ## mako
 <%page expression_filter="h"/>
 <%!
+  from datetime import date
   from django.core.urlresolvers import reverse
   from django.utils.translation import ugettext as _
   from django.conf import settings
@@ -10,33 +11,24 @@
 <%namespace name='static' file='static_content.html'/>
 
 <footer class="theme-footer">
-  <div class="theme-footer_holder">
-    <div class="theme-footer_section">
-      <span class="theme-footer_text">If you have some questions please contact us</span>
-      <a class="theme-btn" href="/contact">Contact us</a>
-    </div>
-  </div>
   <div class="theme-footer_holder theme-footer_holder__color">
     <div class="theme-footer_wrapper">
       <div class="theme-footer_col">
-        <h2 class="theme-footer_col-header">About the National Democratic Institute</h2>
+        <h2 class="theme-footer_col-header">Information</h2>
         <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" target="_blank" href="https://www.ndi.org/">NDI Website</a>  
-        </div>
-        <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" target="_blank" href="https://www.ndi.org/whoweare">About Us</a>
+          <a class="theme-footer_col-link" target="_blank" href="https://tibetanparliament.org/">Tibetan Parliament Website</a>  
         </div>
       </div>
       <div class="theme-footer_col">
         <h2 class="theme-footer_col-header">Contact us</h2>
         <div class="theme-footer_col-holder">
-          <a class="theme-footer_col-link" href="/contact">Contact Us</a>
+          <a class="theme-footer_col-link" target="_blank" href="https://tibetanparliament.org/contact/">Contact Us</a>
         </div>
       </div>
     </div>
     <div class="theme-footer_section">
       <div class="theme-footer_copyright">
-        © 2018 National Democratic Institute. All Rights Reserved
+	${_('Copyright {year}. All rights reserved. Powered by: ').format(year=date.today().year)}
         <a target="_blank" href="${footer['openedx_link']['url']}">
           <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="auto" height="25px;" />
         </a>

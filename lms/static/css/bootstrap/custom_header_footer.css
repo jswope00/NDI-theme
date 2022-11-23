@@ -11,7 +11,7 @@
 	padding-top: 30px
 }
 .theme-footer_holder__color {
-	background: #124C89
+	background: #172f57
 }
 .theme-footer_header {
 	font: 18px/1.3 'Open Sans';
@@ -113,7 +113,7 @@ a.social-list_link.social-list_link__linkedin:hover {
 }
 .custom-nav-holder .header-global {
 	width: 100%;
-	background-color: #124C89;
+	background-color: #172f57;
 	border: none;
 	height: auto;
 	padding: 5px 0 10px 0;
@@ -369,7 +369,7 @@ a.social-list_link {
 	line-height: 1.3
 }
 .theme-main-nav {
-	background: #d4772d
+	background: #834519
 }
 .theme-header {
 	text-align: left;
@@ -413,7 +413,7 @@ a.social-list_link {
 	justify-content: center;
 }
 .theme-main-nav {
-	background: #d4772d;
+	background: #834519;
 	width: 100%;
 	order: -1;
 	position: relative;
@@ -448,7 +448,7 @@ a.social-list_link {
 	color: #fff !important
 }
 .theme-main-nav_link:hover {
-	background: #124C89;
+	background: #172f57;
 	text-decoration: none;
 	color: #fff !important
 }
@@ -690,8 +690,8 @@ a.social-list_link {
 }
 .theme-btn:hover {
     	color: #fff !important;
-    	background: #d4772d;
-    	border-color: #d4772d;
+    	background: #834519;
+    	border-color: #834519;
     	text-decoration: none;
 }
 .theme-nav-wrapper_holder a.nav-link:hover{
