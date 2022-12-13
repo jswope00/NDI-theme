@@ -8,12 +8,12 @@
 
     .login-form {
         * {
-            font-family: 'Open Sans' !important;
+            font-family: 'Times New Roman' !important;
         }
 
         .login-button {
             @include inline-block;
-            font: 14px/1.3 'Open Sans';
+            font: 14px/1.3 'Times New Roman';
             padding: 7px 24px 6px;
             box-shadow: none;
             border-radius: 0;
@@ -34,11 +34,11 @@
     }
     .toggle-form {
         * {
-            font-family: 'Open Sans' !important;
+            font-family: 'Times New Roman' !important;
         }
         .nav-btn {
             @include inline-block;
-            font: 14px/1.3 'Open Sans';
+            font: 14px/1.3 'Times New Roman';
             color: $theme-color-main !important;
             border: 2px solid $theme-color-main-hover;
             padding: 7px 24px 6px;
@@ -60,7 +60,7 @@
         min-width: auto;
         
         * {
-            font-family: 'Open Sans' !important;
+            font-family: 'Times New Roman' !important;
         }
 
         .fa {

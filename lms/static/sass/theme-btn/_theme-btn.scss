@@ -5,7 +5,7 @@
 .empty-dashboard-message a,
 .theme-btn {
     @include inline-block;
-    font: 14px/1.3 'Open Sans';
+    font: 14px/1.3 'Times New Roman';
     border: 2px solid #5a666e;
     padding: 7px 24px 6px;
     box-shadow: none;
@@ -16,8 +16,8 @@
 
     &:hover {
         color: #fff !important;
-        background: #834519;
-        border-color: #834519;
+        background: #008E89;
+        border-color: #008E89;
         text-decoration: none;
     }
 
@@ -27,9 +27,9 @@
         border: 2px solid #fff;
         
         &:hover {
-            color: #834519 !important;
+            color: #008E89 !important;
             background: #fff;
-            border: 2px solid #834519;
+            border: 2px solid #008E89;
         }
     }
     &__right {
