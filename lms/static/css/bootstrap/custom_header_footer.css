@@ -310,6 +310,11 @@ a.social-list_link.social-list_link__linkedin:hover {
 	font-size: 16px;
 	line-height: 1.5
 }
+
+body.view-in-course .nav-holder .header-global, body.view-in-course .nav-holder .header-global.slim {
+        background: #D2E1F5;
+}
+
 .custom-nav-holder .header-global.slim .course-header .provider {
 	font: inherit;
 	font-weight: bold
