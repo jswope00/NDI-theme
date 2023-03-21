@@ -2,9 +2,9 @@
 <%!
 from django.utils.translation import ugettext as _
 from django.urls import reverse
-from courseware.courses import get_course_about_section
+from lms.djangoapps.courseware.courses import get_course_about_section
 from django.conf import settings
-from edxmako.shortcuts import marketing_link
+from common.djangoapps.edxmako.shortcuts import marketing_link
 from openedx.core.lib.courses import course_image_url
 from django.template.defaultfilters import truncatechars
 %>
@@ -130,7 +130,7 @@ from django.template.defaultfilters import truncatechars
         % endif
 
         <div class="main-cta">
-          %if user.is_authenticated() and registered:
+          %if user.is_authenticated and registered:
             %if show_courseware_link:
               <a class="theme-btn theme-btn__disable" href="${course_target}">
             %endif
@@ -159,7 +159,7 @@ from django.template.defaultfilters import truncatechars
             <span class="theme-btn theme-btn__disable">${_("Enrollment is Closed")}</span>
           %elif can_add_course_to_cart:
             <%
-            if user.is_authenticated():
+            if user.is_authenticated:
               reg_href = "#"
               reg_element_id = "add_to_cart_post"
             else:
@@ -213,7 +213,7 @@ from django.template.defaultfilters import truncatechars
 <!--START CTA-->
 
 <!--<div class="main-cta">-->
-          %if user.is_authenticated() and registered:
+          %if user.is_authenticated and registered:
 
           %elif in_cart:
           % elif is_course_full:
