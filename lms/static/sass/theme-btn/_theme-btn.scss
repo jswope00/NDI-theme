@@ -1,3 +1,6 @@
+.empty-dashboard-message p {
+    text-align: center;
+}
 .empty-dashboard-message a,
 .theme-btn {
     @include inline-block;
