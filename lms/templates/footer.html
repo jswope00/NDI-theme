@@ -1,6 +1,7 @@
 ## mako
 <%page expression_filter="h"/>
 <%!
+  from datetime import date
   from django.urls import reverse
   from django.utils.translation import ugettext as _
   from django.conf import settings
@@ -44,7 +45,7 @@
     </div>
     <div class="theme-footer_section">
       <div class="theme-footer_copyright">
-        © 2018 National Democratic Institute. ${_("All Rights Reserved")}
+        ${_('Copyright {year}. All rights reserved. Powered by: ').format(year=date.today().year)}
         <a target="_blank" href="${footer['openedx_link']['url']}">
           <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="auto" height="25px;" />
         </a>
