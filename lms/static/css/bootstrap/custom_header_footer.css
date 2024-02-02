@@ -11,7 +11,7 @@
 	padding-top: 30px
 }
 .theme-footer_holder__color {
-	background: #19458c;
+	background: #e95435;
 }
 .theme-footer_header {
 	font: 18px/1.3 'Raleway';
@@ -299,7 +299,7 @@ a.social-list_link.social-list_link__linkedin:hover {
 	vertical-align: middle
 }
 .custom-nav-holder .header-global.slim .course-header {
-	color: #19458c;
+	color: #e95435;
 	float: left;
 	margin: 10px 10px 0px 10px;
 	display: inline-block;
@@ -378,7 +378,7 @@ a.social-list_link {
 	line-height: 1.3
 }
 .theme-main-nav {
-	background: #19458c;
+	background: #e95435;
 }
 .theme-header {
 	text-align: left;
@@ -422,7 +422,7 @@ a.social-list_link {
 	justify-content: center;
 }
 .theme-main-nav {
-	background: #19458c;
+	background: #e95435;
 	width: 100%;
 	order: -1;
 	position: relative;
@@ -460,7 +460,7 @@ a.social-list_link {
 }
 .theme-main-nav_link:hover {
 	text-decoration: none !important;
-	color: #19458c !important;
+	color: #e95435 !important;
 	background-color: #D2E1F5 !important;
 }
 .theme-main-nav_list {
@@ -531,12 +531,12 @@ a.social-list_link {
 
 .theme-nav-wrapper .nav-global .btn,
 .theme-nav-wrapper .nav-global .btn-neutral {
-	color: #19458c;
+	color: #e95435;
 }
 
 .theme-nav-wrapper .theme-btn {
-	color: #19458c !important;
-	border: 2px solid #19458c !important;
+	color: #e95435 !important;
+	border: 2px solid #e95435 !important;
 }
 
 .theme-nav-wrapper_holder {
@@ -665,15 +665,15 @@ a.social-list_link {
 
 .theme-nav-wrapper_holder .nav-link{ 
 	padding: 0; 
-	/* color: #0075b4 !important; */
-	color: #19458c !important;
+	/ color: #0075b4 !important; /
+	color: #e95435 !important;
 	font-weight: bold; 	
 	font-size: 14px; 
 	margin-top: -6px;
 	cursor: pointer;
 }
 .dropdown-toggle::after{ 
-	color: #19458c; 
+	color: #e95435; 
 	margin:  0 10px 0 24px;
 	vertical-align: -0.100em; 
 }
@@ -711,8 +711,8 @@ a.social-list_link {
 }
 .theme-btn:hover {
     	color: #fff !important;
-    	background: #19458c;
-    	border-color: #19458c;
+    	background: #e95435;
+    	border-color: #e95435;
     	text-decoration: none;
 }
 .theme-nav-wrapper_holder a.nav-link:hover{
@@ -730,4 +730,3 @@ body {
 body.error h1, .dashboard .main-container .my-courses .course .details .wrapper-course-details .course-title a, .dashboard .main-container .my-courses .course .details .wrapper-course-details .course-title span, .find-courses .wrapper-search-context .search-status-label, .pagination .page-divider, .verification-process .carousel .view>.title, .verification-process .content-main>.title, .register.is-not-verified.step-confirmation .view .title, .view-survey .header-survey .title, .wrapper-account-settings .wrapper-header .header-title, .login-register-content h2, .login-register-content .home>header .title>.heading-group p, .home>header .title>.heading-group .login-register-content p, .login-register-content section.outside-app h1, section.outside-app .login-register-content h1, .verification-process .reverify-success-step .title, .reverify-blocked .title, .confirm-enrollment .title, .confirm-enrollment .enrollment-details .course-title h1, .shopping-cart h1, .shopping-cart .user-data .data-input .course-display-name, .shopping-cart .user-data .data-input .course-display-dates, .shopping-cart .user-data .data-input h1, .wrapper-authorize h1, .financial-assistance-wrapper h1, #api-access-wrapper h1, .text-me-fragment h2, .text-me-fragment .home>header .title>.heading-group p, .home>header .title>.heading-group .text-me-fragment p, .text-me-fragment section.outside-app h1, section.outside-app .text-me-fragment h1, .view-profile .profile-header .header, .view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one .profile-section-one-fields>.u-field:first-child, .home>header .title .course-search .search-input, .dashboard .main-container .my-courses .wrapper-header-courses .header-courses, .dashboard-banner .wrapper-msg .msg.title, .view-survey .header-survey .course-name, .view-survey .message.submission-error .message-title, .account-settings-sections .section-header, .login-register .status .message-title, .financial-assistance-wrapper .financial-assistance-form .status .message-title, .verification-process .title, .verification-process .page-header .title .sts-label, .verification-process .page-header .title .sts-course-org, .verification-process .page-header .title .sts-course-number, .verification-process .page-header .title .sts-course-name, .verification-process.step-select-track .register-choice .title, .verification-process.step-requirements .list-reqs .req .title, .verification-process.step-requirements .list-reqs .req-activate .title, .confirm-enrollment .enrollment-details .sub-title, .shopping-cart .billing-data h3, .shopping-cart .pattern h2, .shopping-cart .pattern .home>header .title>.heading-group p, .home>header .title>.heading-group .shopping-cart .pattern p, .shopping-cart .pattern section.outside-app h1, section.outside-app .shopping-cart .pattern h1, .empty-cart h2, .empty-cart .home>header .title>.heading-group p, .home>header .title>.heading-group .empty-cart p, .empty-cart section.outside-app h1, section.outside-app .empty-cart h1, #api-access-wrapper h2, #api-access-wrapper .home>header .title>.heading-group p, .home>header .title>.heading-group #api-access-wrapper p, #api-access-wrapper section.outside-app h1, section.outside-app #api-access-wrapper h1, .certificate-card .card-title, .dashboard-search-results .search-info h2, .dashboard-search-results .search-info .home>header .title>.heading-group p, .home>header .title>.heading-group .dashboard-search-results .search-info p, .dashboard-search-results .search-info section.outside-app h1, section.outside-app .dashboard-search-results .search-info h1, .wrapper-msg .msg-content .title, .verification-process .carousel .requirements .title, .verification-process .carousel .requirements .requirement .title, .verification-process .carousel .wrapper-task .wrapper-help .help .title, .verification-process .carousel #wrapper-review .review-task>.title, .verification-process .list-faq .faq-question, .verification-process.step-confirmation .list-info .info-item>.title, .verification-process .help-item .title, .verification-process.step-select-track .help-register .title, .verification-process.step-select-track .field-certificate-contribution .label, .verification-process.step-review .nav-wizard .prompt-verify .title, .wrapper-messages-primary .message .message-title, .wrapper-messages-primary .message .message-copy .title, .find-courses .search-facets .header-search-facets, .find-courses .search-facets .header-facet, .login-register-content h3, .verification-process .wrapper-msg .msg-content .title, .shopping-cart .user-data .data-input h3, .shopping-cart .user-data .data-input h3 span, .shopping-cart .user-data .data-input .course-registration-title, .shopping-cart .user-data .data-input .course-dates-title, .shopping-cart h3, .enrollment-modal-wrapper.is-shown .enrollment-modal .enrollment-change-title, .financial-assistance-wrapper h2, .financial-assistance-wrapper .home>header .title>.heading-group p, .home>header .title>.heading-group .financial-assistance-wrapper p, .financial-assistance-wrapper section.outside-app h1, section.outside-app .financial-assistance-wrapper h1, .text-me-fragment h3, .certificate-card .card-supertitle, .view-profile .profile-header .subheader, .view-profile .wrapper-profile-section-container-two .u-field-title, .msg__title, .verification-process .carousel #wrapper-review .review-task-photos .wrapper-photos .help-tips .title, .dashboard .main-container .my-courses .course .details .wrapper-course-details .course-info [class*="info-"], .dashboard .main-container .my-courses .course .details .wrapper-course-details .course-info .info-date-block-container .info-date-block, .dashboard .main-container .my-courses .course .details .wrapper-course-details .course-info .info-date-block-container .change-session, .dashboard .main-container .my-courses .course .details .course-actions .wrapper-action-more .actions-dropdown .actions-item, .dashboard .main-container .my-courses .course .details .course-actions .entitlement-actions-wrapper .actions-dropdown .actions-item, .entitlement-actions-wrapper .dashboard .main-container .my-courses .course .details .course-actions .wrapper-action-more .entitlement-actions-dropdown .actions-item, .dashboard .main-container .my-courses .course .details .course-actions .entitlement-actions-wrapper .entitlement-actions-dropdown .actions-item, .entitlement-actions-wrapper .entitlement-actions-dropdown .entitlement-actions-dropdown-list .dashboard .main-container .my-courses .course .details .course-actions .wrapper-action-more .actions-dropdown .entitlement-actions-item, .entitlement-actions-wrapper .dashboard .main-container .my-courses .course .details .course-actions .wrapper-action-more .entitlement-actions-dropdown .entitlement-actions-dropdown-list .entitlement-actions-item, .dashboard .main-container .my-courses .course .details .course-actions .entitlement-actions-wrapper .entitlement-actions-dropdown .entitlement-actions-dropdown-list .entitlement-actions-item, .view-survey .bit .title, .verification-process .wrapper-report .report thead th[scope="col"], .verification-process .progress .progress-step .wrapper-step-number .step-number, .verification-process .progress .progress-step .step-name, .enrollment-results th, .manage-user-results th, .notification .copy .title, .alert:not(.pattern-library-shim) .copy .title, .nav-utilities .action-toggle-message, .view-survey .header-survey .course-org, .view-survey .header-survey .course-number, .certificate-card .card-text, .dashboard .main-container .my-courses .course .details .wrapper-course-image .sts-enrollment .sts-enrollment-value, .verification-process .page-header .title .sts-track .sts-track-value, .view-survey .header-survey .course-info, .verification-process h1, .verification-process h2, .verification-process .home>header .title>.heading-group p, .home>header .title>.heading-group .verification-process p, .verification-process section.outside-app h1, section.outside-app .verification-process h1, .verification-process h3, .verification-process h4, .verification-process h5, .verification-process h6 {
   font-family: 'Raleway',sans-serif;
 }
-
